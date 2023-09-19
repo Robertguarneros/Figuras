@@ -5,12 +5,7 @@ public abstract class Figura implements Comparable<Figura>{
 
      @Override
      public int compareTo(Figura o) {
-          if(this.area()>o.area()){
-               return 1;
-          }else if (this.area()<o.area()){
-               return -1;
-          }else{
-               return 0;
-          }
+          return Double.compare(this.area(), o.area());
      }
+
 }
